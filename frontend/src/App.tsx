@@ -1,9 +1,15 @@
-import './index.css'
+import DataTable from "./components/DataTable";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 function App() {
 
   return (
-    <h1>teste</h1>    
+    <>
+    <NavBar/>
+    <DataTable/> 
+    <Footer/>
+    </>  
   )
 }
 
