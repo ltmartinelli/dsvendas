@@ -4,9 +4,10 @@ import com.devsuperior.dsvendas.entities.Sale;
 import com.devsuperior.dsvendas.entities.Seller;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class SaleDTO {
+public class SaleDTO implements Serializable {
 
     private Long id;
     private Integer visited;
