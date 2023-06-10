@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.jumbotron{
+  margin: 20px 0 300px 0;
+}
+
 .content {
   flex: 1 0 auto;
 }
@@ -23,6 +27,9 @@
 .footer {
   flex-shrink: 0;
   text-align: center;
+  height: 240px;
+  display: flex;
+  align-items: center;
 }
 
 .bg-primary {
@@ -34,7 +41,7 @@
 }
 
 a,
-a:hover {
+a:hover, .dsv-link {
   color: unset;
   text-decoration: none;
 }

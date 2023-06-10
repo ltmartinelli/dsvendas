@@ -1,34 +1,22 @@
-import BarChart from "./components/BarChart";
-import DataTable from "./components/DataTable";
-import DonutChart from "./components/DonutChart";
-import Footer from "./components/Footer";
-import NavBar from "./components/NavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import NavBar from "./components/NavBar"
+import Home from "./pages/Home"
+import Footer from "./components/Footer"
+import Dashboard from "./pages/Dashboard"
 
-
-function App()
+export default function App()
 {
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <section className="container">
-        <h1 className="dsv-text-primary py-3">Dashboard</h1>
-        <div className="row px-3">
-          <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Taxa de Sucesso (%)</h5>
-            <BarChart />
-          </div>
-          <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Participação nas vendas (%)</h5>
-            <DonutChart />
-          </div>
-        </div>
-        <h2 className="py-3 dsv-text-primary">Tabela de Vendas</h2>
-        <DataTable />
-      </section>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard/>} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 
-export default App
+
