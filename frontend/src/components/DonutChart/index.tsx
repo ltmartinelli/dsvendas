@@ -23,7 +23,7 @@ export default function DonutChart()
             const mySeries = data.map(x => x.sum)
             setChartData({labels: myLabels,series: mySeries})
         })
-    }, [chartData])
+    }, [])
 
     const options = {
         legend: {

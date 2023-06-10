@@ -42,7 +42,7 @@ export default function BarChart()
                 }]
             })
         })
-    }, [chartData])
+    }, [])
 
     const options = {
         plotOptions: {
